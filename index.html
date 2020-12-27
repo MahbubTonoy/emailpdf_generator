@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="res/styles.css" type="text/css"/>
+  <title>Department of Management, Dhaka College - PDF Name and Email Subject Generator</title>
+</head>
+<body>
+  <header class="header">
+    <img src="res/Logo_of_DC.png" ba />
+    <div class="line">
+      <div class="department">Department of Management, Dhaka College</div>
+      <div class="origin">PDF Name and Email Subject Generator</div>
+    </div>
+  </header>
+  <div class="main-section">
+    <div class="heading">Please Fill Up The Form And Press Submit</div>
+    <div class="section">
+      Your Name: <input type="text" id="name" placeholder="(Eg: Shakib Al Hasan)" />
+    </div>
+    <div class="section">
+      Choose Year: <select id="year">
+        <option value="H1">1st Year</option>
+      </select>
+    </div>
+    <div class="section">
+      Choose Session: <select id="session">
+        <option value="2019-20">2019-20</option>
+      </select>
+    </div>
+    <div class="section">
+      Your 13 Digit Roll: <input type="text" placeholder="(Eg: 2201920260034)" id="roll"/> 
+    </div>
+    <div class="section">
+      Choose Subject: <select id="subject">
+        <option value="none">Select One</option>
+        <option value="1001">(MGT-1001) Itroduction To Business</option>
+        <option value="1002">(MGT-1002) Principles of Management</option>
+        <option value="1003">(MGT-1003) Principles of Accounting</option>
+        <option value="1004">(MGT-1004) Principles of Marketing</option>
+        <option value="1005">(MGT-1005) Prinriples of Marketing</option>
+        <option value="1006">(MGT-1006) Principles of Finance</option>
+        <option value="1007">(MGT-1007) Viva-Voce</option>
+        <option value="211501">(211501) History of the Energence of Independent Bangladesh</option>
+      </select>
+    </div>
+    <span id="notice">*Every Field is Required</span>
+    <a href="#output" id="submit">Submit</a>
+  </div>
+  <div class="output" id="output">
+    <div id="pdf_name" class="out"></div>
+    <div id="email_subject" class="out"></div>
+  </div>
+  <div class="footer">
+    <div class="disclaimer"><b>Disclaimer:</b> This web application is Developed by <a href="https://www.facebook.com/ThizIzTonoy" target="_BLANK">Mahbub Rashid Tonoy</a>. All Rights Reserved By The Developer.<br/>This Application is created for personal intention, Department of Management, Dhaka College is not involved with any parts of the project.<br/>this project is visible on GitHub.</div>
+  </div>
+  <script type="text/javascript" src="res/main.js"></script>
+</body>
+</html>
