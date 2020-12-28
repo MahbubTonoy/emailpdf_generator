@@ -8,7 +8,7 @@ document.getElementById("submit").addEventListener("click", ()=>{
 
   var pdf_name, email_subject;
   if(name != null && name !="" && year != null && session != null && roll != null && roll != "" && subject !=null && subject != "none") {
-    pdf_name = `${year}_${session}_${roll}_${subject}`;
+    pdf_name = `${year}_${session}_${roll}_${subject}.pdf`;
     document.getElementById("pdf_name").innerHTML=`PDF Name: <input value="${pdf_name}" id="pdfval"/><button onclick="copypdf()">Copy</button>`;
     email_subject = `Name: ${name}. Roll:${roll}. Session: ${session}. Department: Management. Course Code:MGT-${subject}`;
     document.getElementById("email_subject").innerHTML=`Email Subject: <input value="${email_subject}" id="emailval"/><button onclick="copyemail()">Copy</button>`;

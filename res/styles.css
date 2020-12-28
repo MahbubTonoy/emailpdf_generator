@@ -32,6 +32,38 @@
   padding: 10px 0;
   border-bottom: 1px solid #bbb;
 }
+.howto{
+  text-decoration: none;
+  display: block;
+  padding: 10px 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  color: #0a68a7;
+  cursor: pointer;
+}
+.video {
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 5px;
+}
+.video video {
+  height: 80%;
+  width: 100%;
+}
+.vcredit {
+  padding: 10px;
+}
+.vcredit a {
+  color: #0a68a7;
+  text-decoration: none;
+}
+#check:checked ~ .video {
+  height: 300px;
+}
 .section {
   padding: 5px 0;
 }
@@ -76,4 +108,10 @@ pre {
 }
 .out {
   padding: 10px 0;
+}
+.main-footer {
+  background-color: #1e6797;
+  color: #fff;
+  text-align: center;
+  padding: 15px 5px;
 }
